@@ -1,5 +1,7 @@
 import * as React from "react";
 import { View, Text, StyleSheet, KeyboardAvoidingView, TextInput, TouchableOpacity, Modal, Button} from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 export default class LoginScreen extends React.Component{
     render(){
@@ -12,6 +14,15 @@ export default class LoginScreen extends React.Component{
                         <TextInput placeholder = "Password" keyboardType = "Password" secureTextEntry = {true} style = {[styles.inputBox, {marginTop:1}]}></TextInput>
                         <Text>Remember me      Forget Password?</Text>
                         <TouchableOpacity style = {styles.button}>
+                            function HomeScreen({ navigation }) {
+                              <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                                <Text>Home Screen</Text>
+                                  <Button
+                                  title="Go to Details"
+                                  onPress={() => navigation.navigate('Details')}
+                                />
+                              </View>
+                            }
                             <Text style = {{color:'#FFFFFF'}}>Login</Text>
                         </TouchableOpacity>
                     </View>
