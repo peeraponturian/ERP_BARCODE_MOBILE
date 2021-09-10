@@ -6,7 +6,7 @@ export default class LoginScreen extends React.Component{
         return(
             <View style = {styles.container}>
                 <KeyboardAvoidingView>
-                    <View style = {styles.heading}><Text style = {[styles.headingText, {fontWeight:"bold"}]}>!ERP BARCODE!</Text></View>
+                    <View style = {styles.heading}><Text style = {[styles.headingText, {fontWeight:"bold"}]}>ERP BARCODE</Text></View>
                     <View style = {styles.body}>
                         <TextInput placeholder = "Username" keyboardType = "Username" style = {[styles.inputBox, {marginTop:10}]} ></TextInput>
                         <TextInput placeholder = "Password" keyboardType = "Password" secureTextEntry = {true} style = {[styles.inputBox, {marginTop:1}]}></TextInput>
