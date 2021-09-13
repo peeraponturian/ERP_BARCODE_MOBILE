@@ -3,20 +3,32 @@ import { View, Text, StyleSheet, KeyboardAvoidingView, TextInput, TouchableOpaci
 
 export default class LoginScreen extends React.Component{
     render(){
-        return(
-            <View style = {styles.container}>
-                <KeyboardAvoidingView>
-                    <View style = {styles.heading}><Text style = {[styles.headingText, {fontWeight:"bold"}]}>ERP BARCODE</Text></View>
-                    <View style = {styles.body}>
-                        <TextInput placeholder = "Username" keyboardType = "Username" style = {[styles.inputBox, {marginTop:10}]} ></TextInput>
-                        <TextInput placeholder = "Password" keyboardType = "Password" secureTextEntry = {true} style = {[styles.inputBox, {marginTop:1}]}></TextInput>
-                        <Text>Remember me      Forget Password?</Text>
-                        <TouchableOpacity style = {styles.button}>
-                            <Text style = {{color:'#FFFFFF'}}>Login</Text>
-                        </TouchableOpacity>
-                    </View>
-                </KeyboardAvoidingView>
-            </View>
+        return (
+          <View style={styles.container}>
+            <KeyboardAvoidingView>
+              <View style={styles.heading}>
+                <Text style={[styles.headingText, { fontWeight: "bold" }]}>
+                  ERP BARCODE
+                </Text>
+              </View>
+              <View style={styles.body}>
+                <TextInput
+                  placeholder="Username"
+                  keyboardType="email-address"
+                  style={[styles.inputBox, { marginTop: 10 }]}
+                ></TextInput>
+                <TextInput
+                  placeholder="Password"
+                  secureTextEntry={true}
+                  style={[styles.inputBox, { marginTop: 1 }]}
+                ></TextInput>
+                <Text>Remember me Forget Password?</Text>
+                <TouchableOpacity style={styles.button}>
+                  <Text style={{ color: "#FFFFFF" }}>Login</Text>
+                </TouchableOpacity>
+              </View>
+            </KeyboardAvoidingView>
+          </View>
         );
     }
 }
