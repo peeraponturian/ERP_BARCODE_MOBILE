@@ -12,7 +12,7 @@ export default class App extends React.Component {
             height: 60,
             alignContent: "center",
             alignItems: "center",
-            backgroundColor: "#6495ED",
+            backgroundColor: "#5787A4",
             borderRadius: 0,
             shadowColor: "#000000",
             shadowOffset: {
@@ -29,37 +29,31 @@ export default class App extends React.Component {
           <Text style={{ color: "#FFFFFF", fontWeight: "bold", fontSize: 35 }}>
             สำนักงานใหญ่
           </Text>
-          <StatusBar style="light" />
         </View>
 
         <View>
-          <Text style={{ color: "#6495ED", fontWeight: "bold", fontSize: 25 }}>
+          <Text style={{ color: "#5787A4", fontWeight: "bold", fontSize: 25 }}>
             Purchasing Management
           </Text>
-          <StatusBar style="light" />
         </View>
 
         <View>
-          <Text style={{ color: "#6495ED", fontWeight: "bold", fontSize: 25 }}>
+          <Text style={{ color: "#5787A4", fontWeight: "bold", fontSize: 25 }}>
             Sales & Billing Management
           </Text>
-          <StatusBar style="light" />
         </View>
 
         <View>
-          <Text style={{ color: "#6495ED", fontWeight: "bold", fontSize: 25 }}>
+          <Text style={{ color: "#5787A4", fontWeight: "bold", fontSize: 25 }}>
             Warehouse Management
           </Text>
-          <StatusBar style="light" />
         </View>
 
         <View>
-          <Text style={{ color: "#6495ED", fontWeight: "bold", fontSize: 25 }}>
+          <Text style={{ color: "#5787A4", fontWeight: "bold", fontSize: 25 }}>
             อื่นๆ
           </Text>
-          <StatusBar style="light" />
         </View>
-
       </ScrollView>
     );
   }
