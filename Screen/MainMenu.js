@@ -1,84 +1,66 @@
-import * as React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  KeyboardAvoidingView,
-  TextInput,
-  TouchableOpacity,
-  Modal,
-  Button,
-} from "react-native";
+import React from "react";
+import { Text, View, ScrollView } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
-export default class MainMenu extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <KeyboardAvoidingView>
-          <View style={styles.heading}>
-            <Text style={[styles.headingText, { fontWeight: "bold" }]}>
-              ERP BARCODE
-            </Text>
-          </View>
-        </KeyboardAvoidingView>
-      </View>
+      <ScrollView>
+        <View
+          style={{
+            width: 480,
+            height: 60,
+            alignContent: "center",
+            alignItems: "center",
+            backgroundColor: "#6495ED",
+            borderRadius: 0,
+            shadowColor: "#000000",
+            shadowOffset: {
+              width: 10,
+              height: 20,
+            },
+            shadowOpacity: 0.25,
+            shadowRadius: 4,
+            elevation: 0,
+            padding: 10,
+            margin: 0,
+          }}
+        >
+          <Text style={{ color: "#FFFFFF", fontWeight: "bold", fontSize: 35 }}>
+            สำนักงานใหญ่
+          </Text>
+          <StatusBar style="light" />
+        </View>
+
+        <View>
+          <Text style={{ color: "#6495ED", fontWeight: "bold", fontSize: 25 }}>
+            Purchasing Management
+          </Text>
+          <StatusBar style="light" />
+        </View>
+
+        <View>
+          <Text style={{ color: "#6495ED", fontWeight: "bold", fontSize: 25 }}>
+            Sales & Billing Management
+          </Text>
+          <StatusBar style="light" />
+        </View>
+
+        <View>
+          <Text style={{ color: "#6495ED", fontWeight: "bold", fontSize: 25 }}>
+            Warehouse Management
+          </Text>
+          <StatusBar style="light" />
+        </View>
+
+        <View>
+          <Text style={{ color: "#6495ED", fontWeight: "bold", fontSize: 25 }}>
+            อื่นๆ
+          </Text>
+          <StatusBar style="light" />
+        </View>
+
+      </ScrollView>
     );
   }
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#FFFFFF",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-
-  heading: {
-    alignSelf: "center",
-    marginBottom: 30,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
-  headingText: {
-    fontStyle: "italic",
-    color: "black",
-    fontSize: 30,
-    marginBottom: 40,
-  },
-
-  body: {
-    width: 300,
-    height: 300,
-    alignContent: "center",
-    alignItems: "center",
-    backgroundColor: "#FFFFFF",
-    borderRadius: 10,
-    shadowColor: "#000000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
-    elevation: 0,
-  },
-
-  inputBox: {
-    borderWidth: 1,
-    borderColor: "#777",
-    padding: 5,
-    margin: 5,
-    width: 250,
-  },
-
-  button: {
-    backgroundColor: "#808080",
-    height: 35,
-    width: 80,
-    marginTop: 20,
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: 10,
-  },
-});
